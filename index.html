@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Beer Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styling.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">City</label>
+                        <input type="text" class="form-control" id="city" value ="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">State</label>
+                        <input type="text" class="form-control" id="state">
+                    </div>
+                </form>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="map">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
